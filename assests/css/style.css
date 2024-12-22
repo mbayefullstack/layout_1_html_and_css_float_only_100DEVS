@@ -1,148 +1,293 @@
 /*Use font-amesome tlink to CSS.*/
 
 @font-face {
-    font-family: 'Font Awesome 6 Free';
-    font-style: normal;
-    font-weight: 900;
-    font-display: block;
-    src: url("../webfonts/fa-solid-900.woff2");
-  }
-  /* http://meyerweb.com/eric/tools/css/reset/ 
-     v2.0 | 20110126
-     License: none (public domain)
-  */
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../webfonts/fa-solid-900.woff2");
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  font-size: 16px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+header + section {
+  margin-right: 30px;
+  margin-left: 20px;
   
-  html, body, div, span, applet, object, iframe,
-  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-  a, abbr, acronym, address, big, cite, code,
-  del, dfn, em, img, ins, kbd, q, s, samp,
-  small, strike, strong, sub, sup, tt, var,
-  b, u, i, center,
-  dl, dt, dd, ol, ul, li,
-  fieldset, form, label, legend,
-  table, caption, tbody, tfoot, thead, tr, th, td,
-  article, aside, canvas, details, embed, 
-  figure, figcaption, footer, header, hgroup, 
-  menu, nav, output, ruby, section, summary,
-  time, mark, audio, video {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline;
-  }
-  /* HTML5 display-role reset for older browsers */
-  article, aside, details, figcaption, figure, 
-  footer, header, hgroup, menu, nav, section {
-      display: block;
-  }
-  body {
-      line-height: 1;
-    font-size: 16px;
-  }
-  ol, ul {
-      list-style: none;
-  }
-  blockquote, q {
-      quotes: none;
-  }
-  blockquote:before, blockquote:after,
-  q:before, q:after {
-      content: '';
-      content: none;
-  }
-  table {
-      border-collapse: collapse;
-      border-spacing: 0;
-  }
+}
+
+
+main > section > section {
+  float: left;
+  width :48%;
+  height: 49.65%;
+  margin: .1rem;
   
+}
+
+
+main > section > section > h4, main > section > section > span {
+ position :relative;
+  top: 150px;
+  left: 5px;
+}
+
+main > section > section > h4 {
+  margin-bottom: 10px;
+  font-size: 2rem;
   
+}
+/*
+================================
+HEADER
+================================
+*/
+header::before, header::after{
+  background: #000000;
+  content: "";
+  display: table;
+}
+
+header::after {
+  clear: both;
+}
+
+header {
+  clear: both;
+  background: #000000;
+}
+
+header img {
+  float: left;
+  padding: 20px 10px 30px 0;
+  width: 5vw;
+  border-right: 1px solid #ffffff;
   
+}
+header > a {
+  width: 7vw;
+  border-right: 1px solid #ffffff;
+  height:100%;
+  float: left;
+  padding: 30px 120px 30px 20px; 
+}
+
+header > a > span:nth-child(1) {
+ font-size: 1.5rem;
+  font-weight: bold;
+  background: #ffffff;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  padding: 5px 5px 0 5px;
+  margin-right: 20px;
+}
+
+header > a > span:nth-child(2) {
+ font-size: 1.5rem;
+}
+header nav {
+  float: left;
+  margin: 30px 0; 
+}
+
+header form {
+  float: right;
+  padding: 30px 30px 30px 0; 
+  width: 10rem;
+}
+
+header form input {
+  height: 2rem;
+}
+
+
+header nav ul li {
+  float: left;
+  border-right: 1px solid #ffffff;
+  height: 100%;
+}
+header a  {
+  text-decoration: none;
+  color : #ffffff;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+
+header nav ul li a  {
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 1.5rem;
+}
+
+/*
+================================
+FIRST SECTION
+================================
+*/
+section:nth-of-type(1)::before, section:nth-of-type(1)::after {
+  content: "";
+  display: table;
+  margin: 10px;
+}
+
+section:nth-of-type(1)::after {
+  clear: both;
+} 
+
+section:nth-of-type(1) {
+  clear: both;
+}
+section:nth-of-type(1) > h3:nth-of-type(1) {
+  float: left;
+  font-size: 1.5rem;
+}
+
+section:nth-of-type(1) > h3:nth-of-type(2) {
+  float: right;
+  font-size: 1.5rem;
+}
+
+/*
+================================
+MAIN SECTION
+================================
+*/
+
+main:before, main:after {
+  content: "";
+  display: table;
+}
+
+
+main:after {
+  clear: both;
+}
+
+main {
+  clear: both;
+  color: #ffffff;
+}
+
+/*
+FIRST SECTION INSIDE SECOND SECTION
+*/
+
+main > section:first-child {
+  float: left;
+  background-image: url("https://cdn.glitch.global/60f5743f-5624-4da0-8649-2cc26f22d7e9/IsraelandUAE.webp?v=1734799883692");
+  background-repeat:no-repeat;
+  background-size: contain;
+  width :50vw;
+  height: 60vh;
+  position: absolute;
+  margin: 1rem;
   
-  
-  
-  /*
-  ================================
-  HEADER
-  ================================
-  */
-  header::before, header::after{
-    background: #000000;
-    content: "";
-    display: table;
-  }
-  
-  header::after {
-    clear: both;
-  }
-  
-  header {
-    clear: both;
-    background: #000000;
-  }
-  
-  header img {
-    float: left;
-    padding: 20px 10px 30px 0;
-    width: 5vw;
-    border-right: 1px solid #ffffff;
-    
-  }
-  header > a {
-    width: 7vw;
-    border-right: 1px solid #ffffff;
-    height:100%;
-    float: left;
-    padding: 30px 120px 30px 20px; 
-  }
-  
-  header > a > span:nth-child(1) {
-   font-size: 1.5rem;
-    font-weight: bold;
-    background: #ffffff;
-    width: 1000px;
-    height: 1000px;
-    border-radius: 50%;
-    padding: 5px 5px 0 5px;
-    margin-right: 20px;
-  }
-  
-  header > a > span:nth-child(2) {
-   font-size: 1.5rem;
-  }
-  header nav {
-    float: left;
-    margin: 30px 0; 
-  }
-  
-  header form {
-    float: right;
-    padding: 30px 30px 30px 0; 
-    width: 10rem;
-  }
-  
-  header form input {
-    height: 2rem;
-  }
-  
-  
-  header nav ul li {
-    float: left;
-    border-right: 1px solid #ffffff;
-    height: 100%;
-  }
-  header a  {
-    text-decoration: none;
-    color : #ffffff;
-    font-weight: bold;
-    margin: 0 10px;
-  }
-  
-  
-  header nav ul li a  {
-    padding-right: 15px;
-    padding-left: 15px;
-    font-size: 1.5rem;
-  }
-  
+} 
+
+main > section:first-child >  h2,
+main > section:first-child >  span,
+main > section:first-child >  p {
+  position: relative;
+  top: 350px;
+  left: 12px;
+  margin-bottom: .5rem;
+  font-size: 2.5rem;
+}
+
+main > section:first-child >  span {
+  font-size: 1.3rem;
+  border-left: 2px solid red;
+  padding-left: 1rem;
+}
+
+main > section:first-child >  p {
+  margin-bottom: .7rem;
+  font-size: 1.8rem;
+}
+
+/*
+SECOND SECTION INSIDE SECOND SECTION
+*/
+
+main > section:nth-of-type(2) {
+  float: right;
+  width :48vw;
+  height: 56.3vh;
+  padding: 1rem 0 0 2rem;
+} 
+
+
+
+main  > section > section:nth-of-type(1) {
+  background-image: url("https://cdn.glitch.global/60f5743f-5624-4da0-8649-2cc26f22d7e9/americans_go_home.jpeg?v=1734899725524") ;
+  background-size :cover;
+}
+
+main  > section > section:nth-of-type(2) {
+  background-image: url("https://cdn.glitch.global/60f5743f-5624-4da0-8649-2cc26f22d7e9/Howwill.webp?v=1734900261279") ;
+  background-size :cover;
+}
+
+main  > section > section:nth-of-type(3) {
+  background-image: url("https://cdn.glitch.global/60f5743f-5624-4da0-8649-2cc26f22d7e9/Theonline.webp?v=1734899727944") ;
+  background-size :cover;
+}
+
+main  > section > section:nth-of-type(4) {
+  background-image: url("https://cdn.glitch.global/60f5743f-5624-4da0-8649-2cc26f22d7e9/Thefolk.avif?v=1734900269988") ;
+  background-size :cover;
+}
+
+
+
