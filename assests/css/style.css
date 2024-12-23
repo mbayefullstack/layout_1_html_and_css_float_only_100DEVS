@@ -66,6 +66,10 @@ header + section {
 }
 
 
+p + section {
+  background: yellow;
+  width:98vw;
+}
 main > section > section {
   float: left;
   width :48%;
@@ -139,6 +143,14 @@ header nav {
   float: left;
   margin: 30px 0; 
 }
+p+ section > section {
+  float:left;
+  width: 31.6vw;
+  background-repeat:no-repeat;
+  background-size: contain;
+  height:50vh;
+  margin-left: 1rem;
+}
 
 header form {
   float: right;
@@ -203,6 +215,11 @@ section:nth-of-type(1) > h3:nth-of-type(2) {
 MAIN SECTION
 ================================
 */
+ main +p {
+  margin:20px;
+   font-weight: bold;
+   font-size: 1.5rem;
+}
 
 main:before, main:after {
   content: "";
@@ -290,4 +307,29 @@ main  > section > section:nth-of-type(4) {
 }
 
 
+p+ section > section:first-child {
+  background-image: url('https://cdn.glitch.global/60f5743f-5624-4da0-8649-2cc26f22d7e9/Biden_and_Harris.jpg?v=1734949971094');
+  
+}
 
+p+ section > section:nth-child(2) {
+  background-image: url('https://cdn.glitch.global/60f5743f-5624-4da0-8649-2cc26f22d7e9/Women.jpg?v=1734949986256');
+}
+p+ section > section:last-child {
+  background-image: url('https://cdn.glitch.global/60f5743f-5624-4da0-8649-2cc26f22d7e9/Trump.webp?v=1734950592080');
+}
+
+p+ section > section > h4 {
+  margin-top: 21rem;
+  font-size: 1.5rem;
+}
+
+p+ section > section > span {
+  font-size: 1.2rem;
+  border-left: 1px red solid;
+  padding-left : 12px;
+}
+
+p+ section > section > p {
+  font-size: 1.2rem;
+}
